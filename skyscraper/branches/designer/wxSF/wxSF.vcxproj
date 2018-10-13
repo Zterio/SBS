@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\ArrowBase.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WIN32;_DEBUG;_WINDOWS;_PRECOMP;WXUSINGDLL=1;wxUSE_GUI=1;WXDEBUG=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\AutoLayout.cpp" />
+    <ClCompile Include="src\BitmapShape.cpp" />
+    <ClCompile Include="src\BitmapShapeXml.cpp" />
+    <ClCompile Include="src\CanvasHistory.cpp" />
+    <ClCompile Include="src\CanvasState.cpp" />
+    <ClCompile Include="src\CircleArrow.cpp" />
+    <ClCompile Include="src\CircleShape.cpp" />
+    <ClCompile Include="src\CommonFcn.cpp" />
+    <ClCompile Include="src\ControlShape.cpp" />
+    <ClCompile Include="src\CurveShape.cpp" />
+    <ClCompile Include="src\DiagramManager.cpp" />
+    <ClCompile Include="src\DiamondArrow.cpp" />
+    <ClCompile Include="src\DiamondShape.cpp" />
+    <ClCompile Include="src\EditTextShape.cpp" />
+    <ClCompile Include="src\EllipseShape.cpp" />
+    <ClCompile Include="src\FixedRectShape.cpp" />
+    <ClCompile Include="src\FlexGridShape.cpp" />
+    <ClCompile Include="src\GridShape.cpp" />
+    <ClCompile Include="src\LineShape.cpp" />
+    <ClCompile Include="src\MultiSelRect.cpp" />
+    <ClCompile Include="src\OpenArrow.cpp" />
+    <ClCompile Include="src\OrthoShape.cpp" />
+    <ClCompile Include="src\PolygonShape.cpp" />
+    <ClCompile Include="src\PolygonShapeXml.cpp" />
+    <ClCompile Include="src\Printout.cpp" />
+    <ClCompile Include="src\RectShape.cpp" />
+    <ClCompile Include="src\RoundOrthoShape.cpp" />
+    <ClCompile Include="src\RoundRectShape.cpp" />
+    <ClCompile Include="src\ScaledDC.cpp" />
+    <ClCompile Include="src\SFEvents.cpp" />
+    <ClCompile Include="src\ShapeBase.cpp" />
+    <ClCompile Include="src\ShapeBaseXml.cpp" />
+    <ClCompile Include="src\ShapeCanvas.cpp" />
+    <ClCompile Include="src\ShapeDataObject.cpp" />
+    <ClCompile Include="src\ShapeDockpoint.cpp" />
+    <ClCompile Include="src\ShapeHandle.cpp" />
+    <ClCompile Include="src\SolidArrow.cpp" />
+    <ClCompile Include="src\TextShape.cpp" />
+    <ClCompile Include="src\TextShapeXml.cpp" />
+    <ClCompile Include="src\Thumbnail.cpp" />
+    <ClCompile Include="src\wxxmlserializer\PropertyIO.cpp" />
+    <ClCompile Include="src\wxxmlserializer\XmlSerializer.cpp" />
+    <ClCompile Include="src\wx_pch.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\GUI.fbp" />
+    <None Include="src\premake.lua" />
+    <None Include="src\RCa02860" />
+    <None Include="src\RCb02860" />
+    <None Include="src\RCc02860" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\wx\wxsf\ArrowBase.h" />
+    <ClInclude Include="include\wx\wxsf\AutoLayout.h" />
+    <ClInclude Include="include\wx\wxsf\BitmapShape.h" />
+    <ClInclude Include="include\wx\wxsf\CanvasHistory.h" />
+    <ClInclude Include="include\wx\wxsf\CanvasState.h" />
+    <ClInclude Include="include\wx\wxsf\CircleArrow.h" />
+    <ClInclude Include="include\wx\wxsf\CircleShape.h" />
+    <ClInclude Include="include\wx\wxsf\CommonFcn.h" />
+    <ClInclude Include="include\wx\wxsf\ControlShape.h" />
+    <ClInclude Include="include\wx\wxsf\CurveShape.h" />
+    <ClInclude Include="include\wx\wxsf\Defs.h" />
+    <ClInclude Include="include\wx\wxsf\DiagramManager.h" />
+    <ClInclude Include="include\wx\wxsf\DiamondArrow.h" />
+    <ClInclude Include="include\wx\wxsf\DiamondShape.h" />
+    <ClInclude Include="include\wx\wxsf\EditTextShape.h" />
+    <ClInclude Include="include\wx\wxsf\EllipseShape.h" />
+    <ClInclude Include="include\wx\wxsf\FixedRectShape.h" />
+    <ClInclude Include="include\wx\wxsf\FlexGridShape.h" />
+    <ClInclude Include="include\wx\wxsf\GridShape.h" />
+    <ClInclude Include="include\wx\wxsf\LineShape.h" />
+    <ClInclude Include="include\wx\wxsf\MultiSelRect.h" />
+    <ClInclude Include="include\wx\wxsf\OpenArrow.h" />
+    <ClInclude Include="include\wx\wxsf\OrthoShape.h" />
+    <ClInclude Include="include\wx\wxsf\PolygonShape.h" />
+    <ClInclude Include="include\wx\wxsf\Printout.h" />
+    <ClInclude Include="include\wx\wxsf\RectShape.h" />
+    <ClInclude Include="include\wx\wxsf\RoundOrthoShape.h" />
+    <ClInclude Include="include\wx\wxsf\RoundRectShape.h" />
+    <ClInclude Include="include\wx\wxsf\ScaledDC.h" />
+    <ClInclude Include="include\wx\wxsf\SFEvents.h" />
+    <ClInclude Include="include\wx\wxsf\ShapeBase.h" />
+    <ClInclude Include="include\wx\wxsf\ShapeCanvas.h" />
+    <ClInclude Include="include\wx\wxsf\ShapeDataObject.h" />
+    <ClInclude Include="include\wx\wxsf\ShapeDockpoint.h" />
+    <ClInclude Include="include\wx\wxsf\ShapeHandle.h" />
+    <ClInclude Include="include\wx\wxsf\SolidArrow.h" />
+    <ClInclude Include="include\wx\wxsf\TextShape.h" />
+    <ClInclude Include="include\wx\wxsf\Thumbnail.h" />
+    <ClInclude Include="include\wx\wxsf\wxShapeFramework.h" />
+    <ClInclude Include="include\wx\wxxmlserializer\Defs.h" />
+    <ClInclude Include="include\wx\wxxmlserializer\PropertyIO.h" />
+    <ClInclude Include="include\wx\wxxmlserializer\XmlSerializer.h" />
+    <ClInclude Include="src\wx_pch.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AAE8B305-BBAA-4B46-A643-CC5F5A6EDEFF}</ProjectGuid>
+    <RootNamespace>wxSF</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\wxSF\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Configuration)\wxSF\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\wxSF\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Configuration)\wxSF\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>-Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(WXWIN)\lib\vc_dll\mswu;$(WXWIN)\include;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_PRECOMP;wxUSE_GUI=1;WXMAKINGDLL_WXSF;WXMAKINGDLL_WXXS;WXUSINGDLL=1;WXDEBUG=1;wxUSE_UNICODE;UNICODE;_UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <DisableSpecificWarnings>4251;4275;4193</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>wxbase30ud.lib;wxmsw30ud_core.lib;wxbase30ud_xml.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\wxSF.dll</OutputFile>
+      <AdditionalLibraryDirectories>$(WXWIN)\lib\vc_dll;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>..\wxSF.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions>-Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(WXWIN_64)\lib\vc_x64_dll\mswud;$(WXWIN_64)\include;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_PRECOMP;wxUSE_GUI=1;WXMAKINGDLL_WXSF;WXMAKINGDLL_WXXS;WXUSINGDLL=1;WXDEBUG=1;wxUSE_UNICODE;UNICODE;_UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <DisableSpecificWarnings>4251;4275;4193</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>wxbase30ud.lib;wxmsw30ud_core.lib;wxbase30ud_xml.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\wxSF.dll</OutputFile>
+      <AdditionalLibraryDirectories>$(WXWIN_64)\lib\vc_x64_dll;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>..\wxSF.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>-Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(WXWIN)\lib\vc_dll\mswu;$(WXWIN)\include;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_PRECOMP;wxUSE_GUI=1;WXMAKINGDLL_WXSF;WXMAKINGDLL_WXXS;WXUSINGDLL=1;wxUSE_UNICODE;wxDEBUG_LEVEL=0;UNICODE;_UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DisableSpecificWarnings>4251;4275;4193</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>wxbase30u.lib;wxmsw30u_core.lib;wxbase30u_xml.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\wxSF.dll</OutputFile>
+      <AdditionalLibraryDirectories>$(WXWIN)\lib\vc_dll;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>..\wxSF.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions>-Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(WXWIN_64)\lib\vc_x64_dll\mswu;$(WXWIN_64)\include;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_PRECOMP;wxUSE_GUI=1;WXMAKINGDLL_WXSF;WXMAKINGDLL_WXXS;WXUSINGDLL=1;wxUSE_UNICODE;wxDEBUG_LEVEL=0;UNICODE;_UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DisableSpecificWarnings>4251;4275;4193</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>wxbase30u.lib;wxmsw30u_core.lib;wxbase30u_xml.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\wxSF.dll</OutputFile>
+      <AdditionalLibraryDirectories>$(WXWIN_64)\lib\vc_x64_dll;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>..\wxSF.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

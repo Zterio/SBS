@@ -1,0 +1,74 @@
+material video_material
+{
+	technique
+	{
+		pass
+		{
+			cull_software none
+			cull_hardware none
+			lighting off
+			ambient 0 0 0
+			diffuse 1 1 1
+			texture_unit
+			{
+
+			}
+
+		}
+	}
+}
+
+material video_material_1
+{
+	technique
+	{
+		pass
+		{
+			cull_software none
+			cull_hardware none
+			lighting off
+			ambient 0 0 0
+			diffuse 1 1 1
+			texture_unit
+			{
+
+			}
+
+		}
+	}
+}
+
+material Core/StatsBlockBorder/Down
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			scene_blend alpha_blend
+			depth_check off
+
+			texture_unit
+			{
+				texture ogreborder.png
+			}
+		}
+	}
+}
+material Core/StatsBlockBorder/Up
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			scene_blend alpha_blend
+			depth_check off
+
+			texture_unit
+			{
+				texture ogreborderUp.png
+			}
+		}
+	}
+}
